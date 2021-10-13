@@ -43,7 +43,7 @@ function Home() {
       <div id="assujetti">
         <h2>Le preneur est il assujetti à la TVA ? <ModalAssujetti /></h2>
         <div className="select_container">
-          <Link to='Assujetti' ><button className='select'>Oui</button></Link>
+          <Link to='assujetti' ><button className='select'>Oui</button></Link>
           <Link to='non_assujetti' ><button className='select'>Non</button></Link>
         </div>
       </div>
