@@ -23,11 +23,12 @@ const NonAssujetti = () => {
           <p><img src={Check} alt="fleche grise"/>Le preneur n'est pas assujetti à la TVA</p>
         </div>
 
-        <h4>Le preneur est il établi en France ou dans un autre état de l'Union Européenne ?</h4>
+        <h4>Le preneur est il établi ?</h4>
 
         <div className="select_container">
-          <Link to='/France_non_assujetti'><button className='select'>Oui</button></Link>
-          <Link to='/hors_France_non_assujetti'><button className='select'>Non</button></Link>
+        <Link to='prestation_electronique_france' ><button className='select'>En France ? </button></Link>
+        <Link to='UE'><button className='select'>Dans un autre pays de l'Union-Européenne ?</button></Link>
+        <Link to='exoneration_tva' ><button className='select'>Dans un pays en dehors de l'Union-Européenne ?</button></Link>
         </div>
 
       </div>
