@@ -21,11 +21,12 @@ const Assujetti = () => {
           <p><img src={Check} alt="fleche grise"/>Le preneur est assujetti à la TVA</p>
         </div>
 
-      <h4>Votre client est il établi en France ?</h4>
+      <h4>Votre client est il établi :</h4>
 
         <div className="select_container">
-          <Link to='/France'><button className='select'>Oui</button></Link>
-          <Link to='/hors_France'><button className='select'>Non</button></Link>
+          <Link to='/France'><button className='select'>En France</button></Link>
+          <Link to='/assujetti_UE'><button className='select'>En Union Européenne <br /> <span id="subtitle">(Hors France)</span></button></Link>
+          <Link to='/assujetti_hors_UE'><button className='select'>Hors Union Européenne</button></Link>
         </div>
 
       </div>

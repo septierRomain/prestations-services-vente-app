@@ -9,7 +9,7 @@ import Check from '../../Assets/check.svg'
 import Arrow from '../../Assets/arrow.svg'
 import PrestationExo from '../../Assets/categories/prestation exo.png'
 
-const Foreign = () => {
+const SubmiUE = () => {
   let history = useHistory()
   return ( 
 <div className='wrap'>
@@ -23,19 +23,19 @@ const Foreign = () => {
 
       <div className="breadcrumbs">
         <p><img src={Check} alt="fleche grise"/>Le preneur est assujetti à la TVA</p>
-        <p><img src={Check} alt="fleche grise"/>Le preneur est établi en dehors de l'Union Européenne</p>
+        <p><img src={Check} alt="fleche grise"/>Le preneur est établi en Union Européenne (Hors France)</p>
       </div>
 
       <h4>Régle générale d'imposition :</h4>
       <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />La prestation est imposable dans le pays du preneur</ul>
-      <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Appliquer le taux de TVA du pays du preneur</ul>
-      <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Vous devez vous enregistrer à la TVA auprès de ce pays et y effectuer votre déclaration</ul>
+      <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Etablissez une facture HT</ul>
+      <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Un déclaration d'échange de services est à effectuer dès le 1er euro facturé</ul>
 
       <hr />
       <div className='categorie' >
         <h4>Si vous êtes client Dougs : </h4>
         <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Sélectionnez la catégorie "Prestations de services exonérées"</ul>
-        <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Indiquez la raison"vente hors Union Européenne”</ul>
+        <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Indiquez la raison “vente en Union Européenne"</ul>
         <img src={PrestationExo} alt="Categorie UE" />
       </div>
 
@@ -48,4 +48,4 @@ const Foreign = () => {
 );
 }
 
-export default Foreign;
+export default SubmiUE;

@@ -17,7 +17,6 @@ function Home() {
         <h1>Bonjour et bienvenue sur notre simulateur de TVA pour les developpeurs</h1>
         <div id="side">
           <div id="dev">
-            <h4>Vous êtes developpeurs et vous fournissez :</h4>
             <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Vous fournissez et hébergez des sites informatiques, la maintenance à distance de programmes et d'équipement</ul>
             <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Vous fournissez des logiciels et la mise à jour de ceux-ci</ul>
             <ul><img src={Arrow} alt="Fleche verte" style={{transform: 'rotate(180deg)'}} />Vous fournissez des images, des textes et des informations</ul>

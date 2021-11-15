@@ -10,6 +10,7 @@ import UE from './Component/NonAssujetti/UE';
 import ForeignUnsubmit from './Component/NonAssujetti/HorsUE';
 import FranceUnsubmitUE from './Component/NonAssujetti/UnsubmitUE';
 import OSS from './Component/NonAssujetti/OSS';
+import SubmiUE from './Component/Assujetti/SubmitUE';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
           {/* Routes pour les assujetti */}
           <Route exact path='/assujetti' component={Assujetti} />
           <Route exact path='/France' component={France} />
-          <Route exact path='/hors_france' component={Foreign} />
+          <Route exact path='/assujetti_hors_UE' component={Foreign} />
+          <Route exact path='/assujetti_UE' component={SubmiUE} />
 
           {/* Routes pour les non assujetti */}
           <Route exact path='/non_assujetti' component={NonAssujetti} />
